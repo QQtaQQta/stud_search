@@ -4,7 +4,7 @@ student_full_names = []
 
 with open(file_name, 'r') as file:
     for line in file:
-        q = number, student_full_name, var, group, qwertqeyqre = line.split(';')
+        q = number, student_full_name, var, group, qwertqqeyqre = line.split(';')
         last_name, first_name, patronymic = student_full_name.split()
     
         student = {
