@@ -1,10 +1,9 @@
 file_name = 'students_new.txt'
 students = []
-student_full_names = []
 
 with open(file_name, 'r') as file:
     for line in file:
-        q = number, student_full_name, var, group, qwertqqeyqre = line.split(';')
+        number, student_full_name, var, group, qwertqqeyqre = line.split(';')
         last_name, first_name, patronymic = student_full_name.split()
     
         student = {
@@ -28,6 +27,6 @@ for student in students:
         
         break
     else:
-        poi= 'не '
+        poi= 'Студент не найден'
 
-print(f'Студент {poi}найден.')
+print(poi)
